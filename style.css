@@ -141,7 +141,7 @@ section h2 {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, .1);
   transition: .3s;
-  text-align: justify;
+  text-align: left;
 }
 
 .card ul {
