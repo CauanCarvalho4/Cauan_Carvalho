@@ -1,26 +1,162 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil de Links</title>
-  <link rel="stylesheet" href="style.css" type="text/css" media="all">
-</head>
-<body>
-  <div class="main">
-    <img src="avatar-cauan.jpg" alt="Um garoto jogador de basquete" />
-    
-    <h1>Cauan Carvalho</h1>
-    <h5>Caxias-MA</h5>
-    <p>"Desenvolvedor Front-End Júnior."</p>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <nav>
-      <a href="https://www.linkedin.com/in/cauan-carvalho-0a1536309" target="_blank">LinkedIn</a>
-      <a href="https://wa.me/5599981290222?text=Olá,%20tenho%20interesse%20em%20seus%20serviços!" target="_blank">WhatsApp</a>
-      <a href="https://www.github.com/cauancarvalho4" target="_blank">GitHub</a>
-      <a href="https://www.instagram.com/cauan.f_4/" target="_blank">Instagram</a>
-    </nav>
-  </div>
-</body>
+    <title>Cauan Carvalho | Desenvolvedor Web</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2 class="logo">Cauan Carvalho</h2>
+
+        <nav>
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-texto">
+          <h1>Desenvolvedor <span>Web</span></h1>
+
+          <p>
+            Construindo experiências digitais modernas, funcionais e
+            responsivas.
+          </p>
+
+          <a href="https://wa.me/5599981502997" class="btn"> Fale Comigo </a>
+        </div>
+
+        <div class="hero-imagem">
+          <img src="img/programacao.jpg" alt="Notebook com projeto" />
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="servicos">
+        <h2>Serviços</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>🌐 Sites Institucionais</h3>
+            <p>Sites profissionais para empresas.</p>
+          </article>
+
+          <article class="card">
+            <h3>🚀 Landing Pages</h3>
+            <p>Páginas focadas em conversão.</p>
+          </article>
+
+          <article class="card">
+            <h3>&lt;/&gt; Desenvolvimento Web</h3>
+            <p>Soluções personalizadas.</p>
+          </article>
+
+          <article class="card">
+            <h3>🤖 Automação de Atendimento</h3>
+            <p>
+              Atendimento automático via WhatsApp com ManyChat, captação de
+              leads e respostas 24h.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!--FIM - SERVIÇOS  -->
+
+      <!-- PROJETOS -->
+      <section id="projetos">
+        <h2>Projetos</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Chiara Crochê</h3>
+            <p>
+              Landing Page desenvolvida para uma loja de crochê, com design
+              responsivo, catálogo de produtos, integração com WhatsApp e
+              Instagram.
+            </p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+
+            <a
+              href="https://chiaracroche.netlify.app"
+              target="_blank"
+              class="btn-projeto"
+            >
+              Projeto
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Automação de Atendimento</h3>
+            <p>
+              Fluxo de atendimento automático desenvolvido no Manychat, com
+              respostas inteligentes, captação de leads e integração com
+              WhatsApp.
+            </p>
+            <ul>
+              <li>Manychat</li>
+              <li>WhatsApp</li>
+            </ul>
+
+            <a
+              href="https://app.manychat.com/flowPlayerPage?share_hash=4985708_660183cf1f3e024d4081606db8abe1228cfe3539"
+              target="_blank"
+              class="btn-projeto"
+              >Ver Automação</a
+            >
+          </article>
+
+          <article class="card">
+            <h3>Projeto 03</h3>
+            <p>Descrição do projeto.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FIM - PROJETOS -->
+    </main>
+
+    <footer id="contato">
+      <h2>Contato</h2>
+
+      <p>
+        📱
+        <a href="https://wa.me/5599981502997" target="_blank"> WhatsApp </a>
+      </p>
+
+      <p>
+        📧
+        <a href="mailto:cauancarvalho32@gmail.com">
+          cauancarvalho32@gmail.com</a
+        >
+      </p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63606.80123650384!2d-43.40370689243497!3d-4.868229523966396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e92368fcb0553%3A0xe21e8f9dcdce2bbf!2sCaxias%2C%20MA%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1780924458106!5m2!1spt-BR!2sus"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+  </body>
 </html>
