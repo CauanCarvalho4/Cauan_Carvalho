@@ -76,7 +76,6 @@ nav a:hover {
 .hero {
   min-height: 90vh;
   display: flex;
-  margin-top: 100px;
   justify-content: space-around;
   align-items: center;
   gap: 40px;
@@ -258,6 +257,7 @@ footer iframe {
   .hero {
     flex-direction: column;
     text-align: center;
+    margin-top: 100px;
   }
 
   .hero-texto h1 {
@@ -293,6 +293,7 @@ footer iframe {
 
   .hero {
     padding: 30px 20px;
+    margin-top: 50px;
   }
 
   .hero-texto h1 {
