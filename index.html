@@ -17,17 +17,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h2 class="logo">Cauan Carvalho</h2>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="logo">Cauan Carvalho</a>
 
-        <nav>
-          <a href="#inicio">Início</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#contato">Contato</a>
-        </nav>
-      </div>
+        <!-- Ícone do hambúrguer -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Menu de navegação -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -158,5 +166,22 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Fecha o menu quando clica em um link (boa prática)
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
