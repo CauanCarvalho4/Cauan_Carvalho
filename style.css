@@ -14,6 +14,7 @@ body {
     radial-gradient(circle, #0f172a, #020617);
   color: #fff;
   line-height: 1.6;
+  padding-top: 80px;
 }
 
 html {
@@ -34,18 +35,6 @@ header {
   padding: 20px 0;
 }
 
-header .navbar {
-  display: flex;
-  z-index: 1000;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  padding: 10px 4%;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #020617;
-  border-bottom: 1px solid #fff;
-}
 
 .logo {
   color: #60a5fa;
@@ -102,9 +91,15 @@ nav a:hover {
 
 .navbar {
   display: flex;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 10px 4%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  background-color: #020617;
+  border-bottom: 1px solid #fff;
 }
 
 /* Menu normal (desktop) */
@@ -130,7 +125,7 @@ nav a:hover {
 .hamburger span {
   width: 100%;
   height: 3px;
-  background-color: #333;
+  background-color: #32e8f0;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -162,7 +157,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #020617;
     color: rgb(242, 242, 242);
     transform: translateY(-150%);
     /* esconde o menu acima da tela */
@@ -171,6 +166,10 @@ nav a:hover {
     padding: 1rem 0;
     gap: 1rem;
     z-index: 999;
+  }
+
+  .nav-menu a {
+    color: #e2e8f0;
   }
 
   .nav-menu.active {
