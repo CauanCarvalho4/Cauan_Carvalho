@@ -39,26 +39,22 @@ header {
 .logo {
   color: #60a5fa;
   font-size: 1.8rem;
+  text-decoration: none;
 }
 
 h1 span {
   color: #2563eb;
 }
 
-nav {
-  display: flex;
-  gap: 20px;
+#nav-menu a {
+  position: relative;
 }
 
-nav a {
+#nav-menu a {
   text-decoration: none;
   color: #e2e8f0;
   transition: .3s;
   padding: 10px 4%;
-}
-
-#nav-menu a {
-  position: relative;
 }
 
 #nav-menu a:hover {
@@ -238,6 +234,8 @@ section h2 {
   border: 1px solid rgba(255, 255, 255, .1);
   transition: .3s;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .card ul {
@@ -278,7 +276,7 @@ section h2 {
 
 .btn-projeto {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: auto;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #2563eb;
@@ -365,17 +363,6 @@ footer iframe {
 / ================================= */
 
 @media (max-width: 768px) {
-
-  header .container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .hero {
     padding: 30px 20px;
     margin-top: 50px;
@@ -408,14 +395,6 @@ footer iframe {
 
   .logo {
     font-size: 1.4rem;
-  }
-
-  nav {
-    gap: 10px;
-  }
-
-  nav a {
-    font-size: .9rem;
   }
 
   .btn {

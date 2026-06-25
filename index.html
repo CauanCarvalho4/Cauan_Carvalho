@@ -19,7 +19,7 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <a href="#" id="inicio" class="logo">Cauan Carvalho</a>
+        <a href="#inicio" class="logo">Cauan Carvalho</a>
 
         <!-- Ícone do hambúrguer -->
         <button class="hamburger" id="hamburger" aria-label="Abrir menu">
@@ -134,11 +134,6 @@
               >Ver Automação</a
             >
           </article>
-
-          <article class="card">
-            <h3>Projeto 03</h3>
-            <p>Descrição do projeto.</p>
-          </article>
         </div>
       </section>
 
@@ -161,6 +156,7 @@
       </p>
 
       <iframe
+        title="Localização em Caxias, MA"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63606.80123650384!2d-43.40370689243497!3d-4.868229523966396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e92368fcb0553%3A0xe21e8f9dcdce2bbf!2sCaxias%2C%20MA%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1780924458106!5m2!1spt-BR!2sus"
         style="border: 0"
         allowfullscreen=""
@@ -176,6 +172,14 @@
         hamburger.addEventListener("click", () => {
           hamburger.classList.toggle("active");
           navMenu.classList.toggle("active");
+        });
+
+        // Fecha o menu ao clicar em um link (mobile)
+        navMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          });
         });
       }
     </script>
