@@ -186,7 +186,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 32px;
-  padding: 15px 5%;
+  padding: 0 5% 10px;
 }
 
 .menu a {
