@@ -3,191 +3,382 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauã Carvalho — Sites para negócios locais</title>
+    <meta
+      name="description"
+      content="Sites profissionais, rápidos e sob medida para clínicas, comércios e prestadores de serviço. Do Instagram para um site que vende por você."
+    />
 
-    <title>Cauan Carvalho | Desenvolvedor Web</title>
-    <!-- Fonte -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cauã Carvalho — Desenvolvedor Web" />
+    <meta
+      property="og:description"
+      content="Sites profissionais para pequenos negócios locais. Orçamento sem compromisso."
+    />
+    <meta property="og:type" content="website" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <a href="#inicio" class="logo">Cauan Carvalho</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#topo" class="logo">Cauã<span>.dev</span></a>
 
-        <!-- Ícone do hambúrguer -->
-        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <button
+          class="menu-hamburguer"
+          id="menuHamburguer"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menuPrincipal"
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <!-- Menu de navegação --->
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="menu" id="menuPrincipal">
+          <a href="#servicos">Serviços</a>
+          <a href="#processo">Como funciona</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#faq">Perguntas</a>
+          <a href="#contato" class="menu-cta">Falar no WhatsApp</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section id="inicio" class="hero">
-        <div class="hero-texto">
-          <h1>Desenvolvedor <span>Web</span></h1>
+    <main id="topo">
+      <!-- HERO: antes/depois -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-texto">
+            <p class="eyebrow">Desenvolvimento web · Caxias, MA</p>
+            <h1>
+              Seu cliente já te encontrou no Instagram. <br />Falta ele
+              encontrar um <em>site</em> que feche a venda.
+            </h1>
+            <p class="hero-sub">
+              Sou de Caxias e construo sites para negócios da região — clínicas,
+              comércios e prestadores de serviço que querem parecer tão sérios
+              online quanto são no balcão. Veja a diferença ao lado.
+            </p>
+            <div class="hero-acoes">
+              <a href="#contato" class="botao botao-principal"
+                >Pedir orçamento</a
+              >
+              <a href="#projetos" class="botao botao-secundario"
+                >Ver projetos</a
+              >
+            </div>
+          </div>
 
-          <p>
-            Crio sites e landing pages para pequenos negócios — do primeiro
-            contato no WhatsApp até o site no ar, sem complicação.
+          <div class="hero-visual" aria-hidden="true">
+            <div class="comparativo">
+              <div class="comparativo-card card-antes">
+                <span class="comparativo-label">Antes</span>
+                <div class="mock-instagram">
+                  <div class="mock-ig-header">
+                    <div class="mock-ig-avatar"></div>
+                    <div class="mock-ig-linhas">
+                      <div class="linha curta"></div>
+                      <div class="linha"></div>
+                    </div>
+                  </div>
+                  <div class="mock-ig-grid">
+                    <span></span><span></span><span></span> <span></span
+                    ><span></span><span></span>
+                  </div>
+                </div>
+                <p class="comparativo-legenda">
+                  O cliente vê seu Instagram, mas some no meio de outros 50
+                  posts do dia.
+                </p>
+              </div>
+
+              <div class="seta" aria-hidden="true">→</div>
+
+              <div class="comparativo-card card-depois">
+                <span class="comparativo-label">Depois</span>
+                <div class="mock-site">
+                  <div class="mock-site-nav">
+                    <span></span>
+                    <div class="mock-site-nav-itens"><i></i><i></i><i></i></div>
+                  </div>
+                  <div class="mock-site-hero">
+                    <div class="linha curta clara"></div>
+                    <div class="linha clara"></div>
+                    <div class="mock-site-botao"></div>
+                  </div>
+                </div>
+                <p class="comparativo-legenda">
+                  Ele entra, vê o que você faz, e já sabe pra onde mandar a
+                  mensagem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS: prévia ao vivo -->
+      <section class="servicos" id="servicos">
+        <div class="container">
+          <p class="eyebrow">O que eu faço</p>
+          <h2>
+            Três formatos, um objetivo: fazer seu cliente confiar antes de te
+            chamar.
+          </h2>
+
+          <div class="servicos-grid">
+            <button
+              class="servico-card"
+              type="button"
+              data-tipo="institucional"
+              aria-pressed="true"
+            >
+              <div class="servico-preview preview-institucional">
+                <span class="preview-barra"></span>
+                <span class="preview-bloco"></span>
+                <span class="preview-bloco curto"></span>
+              </div>
+              <h3>Site institucional</h3>
+              <p>
+                Apresentação completa do negócio: serviços, sobre, localização e
+                contato direto pelo WhatsApp.
+              </p>
+            </button>
+
+            <button
+              class="servico-card"
+              type="button"
+              data-tipo="landing"
+              aria-pressed="false"
+            >
+              <div class="servico-preview preview-landing">
+                <span class="preview-bloco grande"></span>
+                <span class="preview-cta"></span>
+              </div>
+              <h3>Landing page</h3>
+              <p>
+                Página única e direta ao ponto, pensada para converter visitante
+                em cliente em poucos segundos.
+              </p>
+            </button>
+
+            <button
+              class="servico-card"
+              type="button"
+              data-tipo="portfolio"
+              aria-pressed="false"
+            >
+              <div class="servico-preview preview-portfolio">
+                <span class="preview-grid-item"></span>
+                <span class="preview-grid-item"></span>
+                <span class="preview-grid-item"></span>
+                <span class="preview-grid-item"></span>
+              </div>
+              <h3>Portfólio</h3>
+              <p>
+                Galeria visual para quem vende pelo olhar: arquitetos,
+                fotógrafos, ateliês e estúdios.
+              </p>
+            </button>
+          </div>
+
+          <p class="servicos-detalhe" id="servicoDetalhe">
+            Indicado para: clínicas, consultórios, escritórios e prestadores de
+            serviço. Inclui: seções de serviços, sobre o negócio, localização,
+            depoimentos e botão direto para o WhatsApp — tudo pensado para
+            transmitir confiança já na primeira visita.
           </p>
-
-          <a href="https://wa.me/5599981502997" class="btn" target="_blank">
-            Fale Comigo
-          </a>
-        </div>
-
-        <div class="hero-imagem">
-          <img src="programacao.jpg" alt="Notebook com projeto" />
         </div>
       </section>
 
-      <!-- SERVIÇOS -->
-      <section id="servicos">
-        <h2>Serviços</h2>
+      <!-- PROCESSO -->
+      <section class="processo" id="processo">
+        <div class="container">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Do primeiro contato ao site no ar.</h2>
 
-        <div class="cards">
-          <article class="card">
-            <h3>🌐 Sites Institucionais</h3>
-            <p>
-              Para empresas que querem presença profissional e confiável na
-              internet.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>🚀 Landing Pages</h3>
-            <p>
-              Página única, direta ao ponto — pensada pra converter visita em
-              contato.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>&lt;/&gt; Desenvolvimento Web</h3>
-            <p>Sites feitos sob medida, sem templates genéricos.</p>
-          </article>
-
-          <article class="card">
-            <h3>🤖 Automação de Atendimento</h3>
-            <p>
-              Resposta automática no WhatsApp via ManyChat — capta lead mesmo
-              quando você está offline.
-            </p>
-          </article>
+          <ol class="processo-lista">
+            <li>
+              <span class="processo-numero">1</span>
+              <h3>Conversa inicial</h3>
+              <p>
+                Você me conta sobre o negócio: o que vende, pra quem, e o que o
+                site precisa fazer por você.
+              </p>
+            </li>
+            <li>
+              <span class="processo-numero">2</span>
+              <h3>Proposta e prazo</h3>
+              <p>
+                Te envio um orçamento claro, com prazo de entrega e o que está
+                incluso — sem letras pequenas.
+              </p>
+            </li>
+            <li>
+              <span class="processo-numero">3</span>
+              <h3>Desenvolvimento</h3>
+              <p>
+                Construo o site, te mostro o andamento, e ajusto com base no seu
+                retorno antes da entrega final.
+              </p>
+            </li>
+            <li>
+              <span class="processo-numero">4</span>
+              <h3>Site no ar</h3>
+              <p>
+                Publico o site, te explico o básico de como atualizá-lo, e fico
+                disponível pra ajustes pós-entrega.
+              </p>
+            </li>
+          </ol>
         </div>
       </section>
-      <!--FIM - SERVIÇOS  -->
 
       <!-- PROJETOS -->
-      <section id="projetos">
-        <h2>Projetos</h2>
+      <section class="projetos" id="projetos">
+        <div class="container">
+          <p class="eyebrow">Projetos</p>
+          <h2>Trabalhos recentes</h2>
+          <p class="projetos-aviso">
+            Em breve, exemplos reais de sites entregues vão aparecer aqui.
+          </p>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Chiara Crochê</h3>
-            <p>
-              Landing page para uma loja de crochê: catálogo de produtos,
-              integração direta com WhatsApp e Instagram, e visual pensado pro
-              público feminino que a loja atende.
-            </p>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-
-            <a
-              href="https://chiaracroche.netlify.app"
-              target="_blank"
-              class="btn-projeto"
-            >
-              Projeto
-            </a>
-          </article>
-
-          <article class="card">
-            <h3>Automação de Atendimento</h3>
-            <p>
-              Fluxo de atendimento automático no Manychat: responde dúvidas
-              comuns, capta o contato do cliente e direciona pro WhatsApp — tudo
-              isso funcionando 24h, mesmo sem ninguém online.
-            </p>
-            <ul>
-              <li>Manychat</li>
-              <li>WhatsApp</li>
-            </ul>
-
-            <a
-              href="https://app.manychat.com/flowPlayerPage?share_hash=4985708_660183cf1f3e024d4081606db8abe1228cfe3539"
-              target="_blank"
-              class="btn-projeto"
-              >Ver Automação</a
-            >
-          </article>
+          <div class="projetos-grid">
+            <article class="projeto-card">
+              <div class="projeto-imagem" aria-hidden="true"></div>
+              <h3>Em construção</h3>
+              <p>Novo projeto sendo finalizado.</p>
+            </article>
+            <article class="projeto-card">
+              <div class="projeto-imagem" aria-hidden="true"></div>
+              <h3>Em construção</h3>
+              <p>Novo projeto sendo finalizado.</p>
+            </article>
+            <article class="projeto-card">
+              <div class="projeto-imagem" aria-hidden="true"></div>
+              <h3>Em construção</h3>
+              <p>Novo projeto sendo finalizado.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!-- FIM - PROJETOS -->
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <div class="container">
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2>Antes de você me chamar no WhatsApp</h2>
+
+          <div class="faq-lista">
+            <div class="faq-item">
+              <button class="faq-pergunta" type="button" aria-expanded="false">
+                Quanto tempo demora pra ficar pronto?
+                <span class="faq-icone" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-resposta">
+                <p>
+                  Na maioria dos casos, de 5 a 12 dias depois que você me manda
+                  as fotos e informações do negócio. Eu mesmo cuido de cada
+                  etapa, então não tem fila de outras pessoas na frente do seu
+                  projeto.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-pergunta" type="button" aria-expanded="false">
+                Preciso ter fotos e textos prontos?
+                <span class="faq-icone" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-resposta">
+                <p>
+                  Ajuda ter pelo menos as fotos do negócio. Se faltar texto, sem
+                  problema — eu te faço algumas perguntas sobre o que você vende
+                  e escrevo o conteúdo com você.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-pergunta" type="button" aria-expanded="false">
+                O site funciona bem no celular?
+                <span class="faq-icone" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-resposta">
+                <p>
+                  Sim — e é o primeiro formato que eu testo, porque é de onde a
+                  maioria dos seus clientes vai acessar primeiro.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-pergunta" type="button" aria-expanded="false">
+                Como funciona o pagamento?
+                <span class="faq-icone" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-resposta">
+                <p>
+                  Metade no início, metade na entrega. Se o projeto for maior, a
+                  gente combina parcelas — sem burocracia.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-pergunta" type="button" aria-expanded="false">
+                E depois que o site estiver no ar?
+                <span class="faq-icone" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-resposta">
+                <p>
+                  Você continua com meu contato direto. Precisar trocar um
+                  preço, uma foto ou um texto, me chama — não vai precisar
+                  procurar outra pessoa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="contato" id="contato">
+        <div class="container contato-inner">
+          <p class="eyebrow eyebrow-clara">Vamos conversar</p>
+          <h2>Me conta o que seu negócio precisa.</h2>
+          <p class="contato-sub">
+            Sem formulário chato, sem compromisso. Me explica o que você vende e
+            eu te respondo direto no WhatsApp com um orçamento claro.
+          </p>
+          <a
+            href="https://wa.me/55"
+            class="botao botao-whatsapp"
+            target="_blank"
+            rel="noopener"
+          >
+            Falar agora no WhatsApp
+          </a>
+        </div>
+      </section>
     </main>
 
-    <footer id="contato">
-      <h2>Contato</h2>
-
-      <p>
-        📱
-        <a href="https://wa.me/5599981502997" target="_blank"> WhatsApp </a>
-      </p>
-
-      <p>
-        📧
-        <a href="mailto:cauancarvalho32@gmail.com">
-          cauancarvalho32@gmail.com</a
-        >
-      </p>
-
-      <iframe
-        title="Localização em Caxias, MA"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63606.80123650384!2d-43.40370689243497!3d-4.868229523966396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e92368fcb0553%3A0xe21e8f9dcdce2bbf!2sCaxias%2C%20MA%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1780924458106!5m2!1spt-BR!2sus"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Cauã Carvalho — Desenvolvimento web em Caxias, MA</p>
+        <p class="footer-ano">© <span id="anoAtual"></span></p>
+      </div>
     </footer>
-    <script>
-      const hamburger = document.querySelector("#hamburger");
-      const navMenu = document.querySelector("#nav-menu");
 
-      if (hamburger && navMenu) {
-        hamburger.addEventListener("click", () => {
-          hamburger.classList.toggle("active");
-          navMenu.classList.toggle("active");
-        });
-
-        // Fecha o menu ao clicar em um link (mobile)
-        navMenu.querySelectorAll("a").forEach((link) => {
-          link.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-          });
-        });
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
